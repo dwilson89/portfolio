@@ -1,7 +1,8 @@
 body {
 	
-	background: #181818;
+	background: #202020 ;
 	margin:0px;
+
 }
 
 p{
@@ -9,16 +10,17 @@ p{
 	font-family: "Courier";
 	padding: 10px;
 	color: #FFFFFF;
-	margin-right: 50px;
+	margin-right: 200px;
+	text-align: justify;
+	width: 900px;
 }
 
 h1{
 	margin-left: 200px;
 	color: #FFFFFF;
-	/*text-align: center;*/
 	font-family: "Courier";
 	padding:4px;
-	margin-right: 50px;
+	margin-right: 200px;;
 
 }
 
@@ -27,12 +29,11 @@ h2{
 	margin-left: 200px;
 	font-family: "Courier";
 	font-size: 18px;
-	margin-right: 50px;
+	margin-right: 200px;;
 
 }
 
 h3{
-
 	color: #FFFFFF;
 	text-align: center;
 	font-size: 12px;
@@ -46,8 +47,7 @@ h4{
 	margin: 0px;
 	font-size: 14px;
 	font-family: "Courier";
-	margin-right: 50px;
-
+	margin-right: 200px;;
 }
 
 ul {
@@ -64,9 +64,8 @@ li {
 
 hr{
 
-	width:auto;
 	margin-left: 200px;
-	margin-right: 50px;
+	margin-right: 200px;
 
 }
 
@@ -95,9 +94,10 @@ a:hover, a:active {
 
 #wrapper{
 	
-	width: auto;
+	min-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	vertical-align: 
 }
 
 #header{
@@ -107,21 +107,24 @@ a:hover, a:active {
 }
 
 #nav-panel{
+	min-width: 1200px;
 	margin-left: 200px;
 	position:absolute;
 	top:125px;	
 }
 
 #content{
+	
+	
 	border: 1px solid black;
-	background: #101010;
+	background: #181818;
 	
 	min-height: 500px;
 }
 
 #footer{
-
-	background: #181818;
+	
+	background: #202020;
 	height: 40px;
 
 }
