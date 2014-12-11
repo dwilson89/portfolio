@@ -7,7 +7,7 @@ body {
 
 p{
 	margin-left: 200px;
-	font-family: "Courier";
+	font-family: "Franklin Gothic";
 	padding: 10px;
 	color: #FFFFFF;
 	margin-right: 200px;
@@ -18,7 +18,9 @@ p{
 h1{
 	margin-left: 200px;
 	color: #FFFFFF;
-	font-family: "Courier";
+	
+	font-family: "Franklin Gothic";
+	font-weight: bold;
 	padding:4px;
 	margin-right: 200px;;
 
@@ -27,7 +29,7 @@ h1{
 h2{
 	color: #FFFFFF;
 	margin-left: 200px;
-	font-family: "Courier";
+	font-family: "Franklin Gothic";
 	font-size: 18px;
 	margin-right: 200px;;
 
@@ -37,7 +39,7 @@ h3{
 	color: #FFFFFF;
 	text-align: center;
 	font-size: 12px;
-	font-family: "Courier";
+	font-family: "Franklin Gothic";
 	padding: 10px;
 }
 
@@ -46,7 +48,7 @@ h4{
 	margin-left: 200px;
 	margin: 0px;
 	font-size: 14px;
-	font-family: "Courier";
+	font-family: "Franklin Gothic";
 	margin-right: 200px;;
 }
 
@@ -59,7 +61,7 @@ ul {
 
 li {
     float: left;
-    font-family: "Courier";
+    font-family: "Franklin Gothic";
 }
 
 hr{
@@ -79,7 +81,7 @@ a:link, a:visited {
     display: block;
     width: 150px;
     font-weight: bold;
-    font-family: "Courier";
+    font-family: "Franklin Gothic";
     color: #FFFFFF;
     background-color: #000000;
     text-align: left;
