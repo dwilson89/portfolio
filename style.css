@@ -71,13 +71,14 @@ hr{
 
 }
 
+
 img{
     float: left;
     border: 1px groove white;
-    margin: 0px 10px 15px 0px;
+    margin: 0px 20px 20px 200px;
 }
 
-a:link, a:visited {
+/*a:link, a:visited {
     display: block;
     width: 150px;
     font-weight: bold;
@@ -88,11 +89,31 @@ a:link, a:visited {
     padding: 4px;
     text-decoration: none;
     text-transform: uppercase;
+}*/
+
+a.nav-bar:link, a.nav-bar:visited{
+	display: block;
+    width: 150px;
+    font-weight: bold;
+    font-family: "Franklin Gothic";
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: left;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+
 }
 
+a.nav-bar:hover, a.nav-bar:active {
+    background-color:#0066FF;
+}
+
+/*
 a:hover, a:active {
     background-color:#0066FF;
 }
+*/
 
 #wrapper{
 	
