@@ -8,7 +8,7 @@ body {
 p{
 	margin-left: 200px;
 	font-family: "Franklin Gothic";
-	padding: 10px;
+	
 	color: #FFFFFF;
 	margin-right: 200px;
 	text-align: justify;
@@ -49,17 +49,36 @@ h4{
 	margin: 0px;
 	font-size: 14px;
 	font-family: "Franklin Gothic";
-	margin-right: 200px;;
+	margin-right: 200px;
 }
 
-ul {
+h5{
+	color: #FFFFFF;
+	margin-left: 200px;
+	font-size: 16px;
+	font-family: "Franklin Gothic";
+	margin-right: 200px;
+	margin: 8px 200px 8px 200px;
+
+}
+
+ul.nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+ul.content-points{
+	margin-left: 200px;
+	font-family: "Franklin Gothic";
+	color: #FFFFFF;
+	margin-right: 200px;
+	width: 900px;
+	list-style-type: circle;
+}
+
+ul.nav-list li {
     float: left;
     font-family: "Franklin Gothic";
 }
@@ -73,9 +92,9 @@ hr{
 
 
 img{
-    float: left;
+    float: right;
     border: 1px groove white;
-    margin: 0px 20px 20px 200px;
+    margin: 20px 200px 20px 20px;
 }
 
 /*a:link, a:visited {
