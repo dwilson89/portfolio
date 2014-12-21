@@ -1,17 +1,18 @@
+html,
 body {
 	
-	background: #202020 ;
+	background: #181818;
 	margin:0px;
-	min-width: 1200px;
+	padding:0px;
+	height:100%;
 }
 
 p{
 	
 	font-family: "Franklin Gothic";
 	color: #FFFFFF;
-	margin-right: 200px;
 	text-align: justify;
-	width: 900px;
+	
 }
 
 h1{
@@ -53,6 +54,7 @@ h4{
 h5{
 	color: #FFFFFF;
 	font-size: 16px;
+	margin: 0px 0px 15px 0px;
 	font-family: "Franklin Gothic";
 	
 
@@ -68,7 +70,6 @@ ul.nav-list {
 ul.content-points{
 	font-family: "Franklin Gothic";
 	color: #FFFFFF;
-	width: 900px;
 	list-style-type: circle;
 
 }
@@ -80,7 +81,7 @@ ul.nav-list li {
 
 hr{
 
-	margin: auto;
+	margin: -10px 0px 20px 0px;
 
 }
 
@@ -137,9 +138,8 @@ a:hover, a:active {
 
 #wrapper{
 	
-	margin-left: auto;
-	margin-right: auto;
-	vertical-align: 
+	min-height:100%;
+	position:relative;
 }
 
 #header{
@@ -149,22 +149,23 @@ a:hover, a:active {
 }
 
 #nav-panel{
-	min-width: 1200px;
+	
 	background: black;
 
 }
 
 #content{
 	
-	
-	border: 1px solid black;
 	background: #181818;
-	
-	min-height: 500px;
+	padding-bottom:50px;
 }
 
 #footer{
-	
+	width:100%;
 	background: #202020;
-	height: 40px;
+	height: 50px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	border: 1px solid black;
 }
