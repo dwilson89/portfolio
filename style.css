@@ -3,8 +3,8 @@ body {
 	
 	background: #181818;
 	margin:0px;
-	padding:0px;
 	height:100%;
+	min-width: 1200px;
 }
 
 p{
@@ -12,6 +12,7 @@ p{
 	font-family: "Franklin Gothic";
 	color: #FFFFFF;
 	text-align: justify;
+
 	
 }
 
@@ -171,7 +172,7 @@ a:hover, a:active {
 #connect-links{
 	margin-left: auto;
     margin-right: auto;
-    width:70%;
+    width:100%;
 
 }
 
