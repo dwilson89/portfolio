@@ -22,6 +22,8 @@ h1{
 	font-family: "Franklin Gothic";
 	font-weight: bold;
 	padding:4px;
+	font-size: 36px;
+
 
 
 }
@@ -86,10 +88,15 @@ hr{
 }
 
 
-img{
+img.content-pic{
     float: right;
     border: 1px groove white;
     margin: 20px 0px 20px 20px;
+}
+
+img.logo{
+ 	float: left;
+
 }
 
 /*a:link, a:visited {
