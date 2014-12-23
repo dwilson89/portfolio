@@ -18,22 +18,17 @@ p{
 h1{
 	
 	color: #FFFFFF;
-	
 	font-family: "Franklin Gothic";
 	font-weight: bold;
-	padding:4px;
+	
 	font-size: 36px;
-
-
 
 }
 
 h2{
 	color: #FFFFFF;
-
 	font-family: "Franklin Gothic";
 	font-size: 18px;
-
 
 }
 
@@ -47,7 +42,6 @@ h3{
 
 h4{
 	color: #FFFFFF;
-	
 	font-size: 14px;
 	font-family: "Franklin Gothic";
 
@@ -58,8 +52,6 @@ h5{
 	font-size: 16px;
 	margin: 0px 0px 15px 0px;
 	font-family: "Franklin Gothic";
-	
-
 }
 
 ul.nav-list {
@@ -128,7 +120,7 @@ a.nav-bar:link, a.nav-bar:visited{
     color: #FFFFFF;
     background-color: #000000;
     text-align: left;
-    padding: 4px;
+    
     text-decoration: none;
     text-transform: uppercase;
 
@@ -147,7 +139,8 @@ a:hover, a:active {
 .content-wrapper{
 
 	width: 1000px;
-	margin: auto;
+	margin-right:auto;
+	margin-left:auto;
 
 }
 
@@ -175,6 +168,13 @@ a:hover, a:active {
 	padding-bottom:50px;
 }
 
+#connect-links{
+	margin-left: auto;
+    margin-right: auto;
+    width:70%;
+
+}
+
 #footer{
 	width:100%;
 	background: #202020;
@@ -182,5 +182,5 @@ a:hover, a:active {
 	position:absolute;
 	bottom:0;
 	left:0;
-	border: 1px solid black;
+	border-top: 1px solid black;
 }
