@@ -94,10 +94,17 @@ img.logo{
 
 a:link {
     text-decoration: none;
+    color:#0066FF;
 }
 
 a:visited {
     text-decoration: none;
+     color:#0066FF;
+}
+
+a:hover{
+
+	color:#0033FF;
 }
 
 /*a:link, a:visited {
