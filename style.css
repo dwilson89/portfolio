@@ -99,7 +99,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-     color:#0066FF;
+    color:#0066FF;
 }
 
 a:hover{
@@ -119,6 +119,56 @@ a:hover{
     text-decoration: none;
     text-transform: uppercase;
 }*/
+
+a.rec-pro:link, a.rec-pro:visited{
+
+	text-decoration: none;
+
+}
+
+a.rec-pro:hover, a.rec-pro:active {
+    background-color:#0066FF;
+}
+
+span.text{ 
+	background: rgba(0,0,0,0.5);
+  	color: white;
+  	cursor: pointer;
+  	display: table;
+  	height: 125px;
+  	left: 0;
+  	position: absolute;
+  	top: 0;
+  	width: 190px;
+  	opacity: 0;
+  	padding:3px;
+  	font-size: 15px;
+}
+
+span.text span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.Recent-Projects {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ 
+ul.Recent-Projects li {
+  display: inline-block;
+  height: 130px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 195px;
+}
+
+ul.Recent-Projects li:hover span.text {
+  opacity: 1;
+}
 
 a.nav-bar:link, a.nav-bar:visited{
 	display: block;
