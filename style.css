@@ -251,6 +251,16 @@ a:hover, a:active {
 	height: 150px;
 }
 
+#intro{
+
+	font-size: 24px;
+	font-weight: bold;
+    font-family: "Franklin Gothic";
+    color: #FFFFFF; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 #nav-panel{
 	
 	background: black;
