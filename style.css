@@ -62,6 +62,41 @@ ul.nav-list {
     overflow: hidden;
 }
 
+ul.project-list{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.project-list li {
+    font-family: "Franklin Gothic";
+}
+
+ul.Back-to{
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+    padding:0px;
+}
+
+ul.Back-to li {
+    
+    font-family: "Franklin Gothic";
+    display:inline-block;
+	width:200px;
+	margin:0px; 
+
+}
+
+a.Back:link, a.Back:visited{
+    padding:10px;
+    text-decoration: none;
+    
+}
+
+
 ul.content-points{
 	font-family: "Franklin Gothic";
 	color: #FFFFFF;
@@ -72,7 +107,9 @@ ul.content-points{
 ul.nav-list li {
     float: left;
     font-family: "Franklin Gothic";
+
 }
+
 
 hr{
 
