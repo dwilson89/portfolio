@@ -131,12 +131,12 @@ img.logo{
 
 a:link {
     text-decoration: none;
-    color:#0066FF;
+    color:#5ab9fc;
 }
 
 a:visited {
     text-decoration: none;
-    color:#0066FF;
+    color:#5ab9fc;
 }
 
 a:hover{
@@ -164,7 +164,7 @@ a.rec-pro:link, a.rec-pro:visited{
 }
 
 a.rec-pro:hover, a.rec-pro:active {
-    background-color:#0066FF;
+    background-color:#5ab9fc;
 }
 
 span.text{ 
@@ -222,7 +222,7 @@ a.nav-bar:link, a.nav-bar:visited{
 }
 
 a.nav-bar:hover, a.nav-bar:active {
-    background-color:#0066FF;
+    background-color:#5ab9fc;
 }
 
 /*
