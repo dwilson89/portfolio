@@ -84,24 +84,32 @@ if (hs.addSlideshow) hs.addSlideshow({
 			<div id="Silo">
 			<p><b>Project: </b>Silo Inspection UAV<br>
 			<b>Year: </b>2014<br>
-			<b>Role: </b>Ground Control and Localisation<br>
-			<b>Languages Utilised: </b>C#, C++, Arduino<br>
-			<b>Description: </b>Develop a UAV system to successfully navigate in an indoor environment, and locate potential pests (Gypsie Moths, Straw).<br>
-			<b>Main tasks: </b><br></p>
-			<ul class="content-points" >
-				<li>Document creation following a systems engineering approach, this including System Requirements, Trade studies, Preliminary/Final Design, and Test Reports.</li>
-				<li>Participation in group discussions including strategic planning, progress updates, and troubleshooting. This includes both with a client and without.</li>
-				<li>Research and technical analysis of current state system behaviour relating to my directed tasks.</li>
-				<li>Using C# to build upon an existing Ground Control Station software package to include additional user functionality for pest detection.</li>
-				<li>Developing with C++ in order to create an addition application to interface with other systems in use, such as (Vicon and Telecommunications subsystems). In addition to developing on Arduinos to act as an interface for the telecommunications between the Ground Control Station and the UAV in order to develop an indoor localisation system.</li>
-				<li>Planning and execution of test suites for user acceptance.</li>	
-			</ul>
-			<p><b>Key Achievements: </b><br></p>
+			<b>Role: </b>Ground Control Station and Localisation Developer<br>
+			<b>Languages Utilised: </b>C++, Arduino<br>
+			<b>Project Description: </b>Develop a UAV system to successfully navigate in an indoor environment, and locate potential pests (Gypsie Moths, Straw).<br>
+			<b>Code Desciption: </b><br></p>
+				<p>
+					For this project, I worked on two different systems that interacted with one another and several other subsystems, a Ground Control Station application and a Localisation system which could localise an UAV in an indoor environment. 
+
+					<!-- Using C# I developed off a pre-existing Ground Control Application called Mission Planner, and built in additional user functionality that would integrate and work with an Image Processing subsystem that was also being developed. This add-on would notify the user if a pest had been found via the Image Processing background application. This was achieved via the use of background workers (threads) parsing a shared repository for images with pests detected in them. 
+
+					If a new image with a pest has been found the application add-on uses information from the image files naming convention to notify the user by vocalising the type, updating the current pest image display with the found pest, adding the new image to a collection of other images found, and finally the map Mission Planner uses is updated to show exactly where in the silo the pest has been detected.  -->
+
+					<br><br>
+
+					Using C++ and Arduino programming language I developed a application that could interface with a Vicon (Motion capture) system, and several other subsystems of the UAV in order to localise itself to the area in which it was flying. The application was developed to work with a series of Arduinos, one on the ground and one attached to the UAV itself. My application was designed and developed to be able to connect to a vicon server and then periodically query the server for current locational data of the UAV. From here the data is converted to Mavlink messages (a form of telecommunication protocols for UAVs), and via the use of a serial connection the application sends these messages to an arduino on the ground which has an serial radio plugged into it. From this point the messages are then broadcasted to another radio attached to the UAV, which is plugged into the other arduino. 
+
+					This arduino is programmed to act like an GPS system and communicate with the autopilot subsystem  through its GPS port. It is designed to listen to the radio for that particular message being broadcast by ground control, and once detected process it and turn it into "fake" gps messages using UBX protocol. These messages are then sent to the autopilots GPS port.
+
+					Videos and imagery of this project can be found below.</p>
+			
+		
+<!-- 			<p><b>Key Achievements: </b><br></p>
 			<ul class="content-points" >
 				<li>Received positive and consistent feedback from Team Lead on my approach to the project and the work I was producing</li>
 				<li>Received positive and consistent feedback from Course Coordinator, with documents produced used as a reference point for other students</li>
 				<li>Project team received a Distinction (6)</li>
-			</ul>
+			</ul> -->
 			<p><b>Repository Links: </b><br>
 			<a href="https://bitbucket.org/Rhaistlin/vicontoubx2" title="VicontoUBX" target="_blank">ViconToUBX Application Repository Click Here</a><br>
 			<a href="https://bitbucket.org/Rhaistlin/vicon-gps-arduino-code" title="Arduino Code" target="_blank">Arduino Code Repository Click Here</a><br></p>
@@ -163,6 +171,14 @@ if (hs.addSlideshow) hs.addSlideshow({
 				Arduino Mega 2560 with Custom Made Shield.
 			</div>
 
+			<a href="projectimages/sa.jpg" class="highslide" onclick="return hs.expand(this)">
+				<img src="projectimages/sa.thumb.jpg" alt="Highslide JS"
+					title="Click to enlarge" /></a>
+
+			<div class="highslide-caption">
+				System Architecture for the Silo Inspection Project.
+			</div>
+
 			</div>
 
 		</div>
@@ -185,19 +201,14 @@ if (hs.addSlideshow) hs.addSlideshow({
 			<b>Year: </b>2014<br>
 			<b>Role: </b>Developer<br>
 			<b>Languages Utilised: </b>C<br>
-			<b>Description: </b>Build and design a program to simulate a one runway airport, that has planes arriving and departing on random intervals.<br>
-			<b>Main tasks: </b><br></p>
-			<ul class="content-points" >
-				<li>Document creation for system enhancements including functionality and parameters, as well as protection in place and other systems in place.</li>
-				<li>Participation in group discussions including strategic planning, progress updates, and troubleshooting.</li>
-				<li>Research and technical analysis of current state system behaviour relating to my directed tasks.</li>
-				<li>Development of functionality using C to implement a "producer" in order to create and simulate incoming aircraft.</li>
-				<li>Implementation of protective measures, such as semaphores and mutexes in order to protect and remove the risk of currupting data.</li>
-			</ul>
-			<p><b>Key Achievements: </b><br></p>
+			<b>Project Description: </b>Build and design a program to simulate a one runway airport, that has planes arriving and departing on random intervals.<br>
+			<b>Code Description: </b><br></p>
+				<p>The application is designed to have three different processes (threads) running at all times. A "producer" (process to create arriving airplanes), a "consumer" (process to destroy/depart airplanes), and a "observer" to allow the user to view current airport information (current capcity and airplane information) and/or exit the application. In addition to this thier was a limit to airport capacity (10 at any time), and one runway which could only produce/consume one at a time. I was in charge of development of functionality using to implement a "producer" in order to create and simulate incoming aircraft. Airplanes are randomly created/destroyed via the use of initial percentage values to determine the chances of an incoming/departing flight. If an airplane is to be created it checks the current capacity of the airport and then waits for the runway to be clear. From here a "new" airplane is created with a code that is randomly generated and then put into an empty flight bay randomly determined. <br><br>
+				In addition to this I was also in charge of implementation of protective measures, such as semaphores and mutexes in order to protect shared data and remove the risk of currupting it. They were also used as a mean to block the production/consumation of airplanes once the capacity had reached its limits.</p>
+			<!-- <p><b>Key Achievements: </b><br></p>
 			<ul class="content-points" >
 				<li>Project team received a High Distinction (7)</li>
-			</ul>
+			</ul> -->
 			<p><b>Repository Link: </b><br>
 			
 			<a href="https://bitbucket.org/Rhaistlin/airport-simulator" title="Airport Simulator Bitbucket" target="_blank">Airport Simulator Repository Click Here</a><br>
@@ -221,20 +232,19 @@ if (hs.addSlideshow) hs.addSlideshow({
 			<b>Year: </b>2014<br>
 			<b>Role: </b>Developer<br>
 			<b>Languages Utilised: </b>C<br>
-			<b>Description: </b>Build and design server and client applications that inteface with one another, in order to pass food calorie information. With the Server developed to behave as a database with food calorie information, with the Client developed as a means to access said information from the server.<br>
-			<b>Main tasks: </b><br></p>
-			<ul class="content-points" >
-				<li>Document creation for system enhancements including functionality and parameters, as well as protection in place and other systems in place.</li>
-				<li>Participation in group discussions including strategic planning, progress updates, and troubleshooting.</li>
-				<li>Research and technical analysis of current state system behaviour relating to my directed tasks.</li>
+			<b>Project Description: </b>Build and design server and client applications that inteface with one another, in order to pass food calorie information. With the Server developed to behave as a database with food calorie information, with the Client developed as a means to access said information from the server.<br>
+			<b>Code Description: </b><br></p>
+
+			<p>Two different applications have been developed, one a server which houses the food calorie database, and the other to act as a client for the server. The client application is designed to allow the user to query the server for food calorie information via sending a search term, and/or add a new item to the database used by the server. The server applicated is designed to accept and process a maximum of 10 incoming clients requests and handle them separately. If a search has been requested the server will look for items matching the search term and return an n number of found results to the client. If a new item is to be added the server will correctly place the new item in the correct alphabetic location and then save the database.</p>
+			
 				<li>Development of functionality using C to build upon developed functionality to account for multiple clients connected to the server via the use of a thread pool.</li>
 				<li>Development of functionality using C to allow for the client to add to the database.</li>
 				<li>Implementation of protective measures, such as semaphores and mutexes in order to protect and remove the risk of currupting data.</li>
-			</ul>
-			<p><b>Key Achievements: </b><br></p>
+			
+			<!-- <p><b>Key Achievements: </b><br></p>
 			<ul class="content-points" >
 				<li>Project team received a Credit (5)</li>
-			</ul>
+			</ul> -->
 			<p><b>Repository Link: </b><br>
 			
 			<a href="https://bitbucket.org/Rhaistlin/client-and-server-food-calorie-database" title="Food and Calorie database Bitbucket" target="_blank">Food and Calorie database Repository Click Here</a><br>

@@ -222,7 +222,7 @@ a.nav-bar:link, a.nav-bar:visited{
 }
 
 a.nav-bar:hover, a.nav-bar:active {
-    background-color:#5ab9fc;
+    background-color:#808080 ;
 }
 
 /*
@@ -255,10 +255,9 @@ a:hover, a:active {
 
 	font-size: 24px;
 	font-weight: bold;
-    font-family: "Franklin Gothic";
-    color: #FFFFFF; 
-    margin-top: 20px;
-    margin-bottom: 10px;
+  font-family: "Franklin Gothic";
+  color: #FFFFFF; 
+  margin-top: 20px;
 }
 
 #nav-panel{
