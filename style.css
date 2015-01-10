@@ -172,13 +172,12 @@ span.text{
   	color: white;
   	cursor: pointer;
   	display: table;
-  	height: 125px;
+  	height: 262px;
   	left: 0;
   	position: absolute;
   	top: 0;
-  	width: 190px;
+  	width: 221px;
   	opacity: 0;
-  	padding:3px;
   	font-size: 15px;
 }
 
