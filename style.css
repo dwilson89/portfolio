@@ -273,8 +273,8 @@ a:hover, a:active {
 
 #connect-links{
 	margin-left: auto;
-    margin-right: auto;
-    width:100%;
+  margin-right: auto;
+  width:100%;
 
 }
 
@@ -286,4 +286,23 @@ a:hover, a:active {
 	bottom:0;
 	left:0;
 	border-top: 1px solid black;
+}
+
+#contact{
+
+
+  width: 300px;
+  text-align:right;
+  color: white;
+  font-size: 12px;
+  font-family: "Franklin Gothic";
+  position: relative;
+  top: -59px;
+  left: 700px;
+}
+
+#rec-pro{
+
+  height:400px;
+
 }
