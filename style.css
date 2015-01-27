@@ -90,6 +90,12 @@ ul.Back-to li {
 
 }
 
+ul.Recent-Projects li{
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 a.Back:link, a.Back:visited{
     padding:10px;
     text-decoration: none;
@@ -173,12 +179,13 @@ span.text{
   	cursor: pointer;
   	display: table;
   	height: 262px;
-  	left: 0;
+  	left: 11px;
   	position: absolute;
-  	top: 0;
+  	top: 1px;
   	width: 221px;
   	opacity: 0;
   	font-size: 15px;
+ 
 }
 
 span.text span {
