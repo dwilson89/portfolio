@@ -428,7 +428,9 @@ if (hs.addSlideshow) hs.addSlideshow({
 
 			<div id="c-pro">
 				<h2>C Projects</h2><hr>
-			
+				
+				<div id="rec2">
+
 				<p><b>Project: </b>Airport Simulator<br>
 				<b>Year: </b>2014<br>
 				<b>Project Type: </b>Team<br>
@@ -444,6 +446,46 @@ if (hs.addSlideshow) hs.addSlideshow({
 				<a href="https://bitbucket.org/Rhaistlin/airport-simulator" title="Airport Simulator Bitbucket" target="_blank">Airport Simulator Repository Click Here</a><br>
 				</p>
 
+				<b>Project Gallery: </b></p>			
+
+					<div class="highslide-gallery">
+
+						<a href="projectimages/airsim/Start.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/airsim/Start.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" />
+						</a>
+
+						<div class="highslide-caption">
+							Airport Simulator start up command.
+						</div>
+
+						<a href="projectimages/airsim/create.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/airsim/create.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Airport Simulator run command.
+						</div>
+
+						<a href="projectimages/airsim/currentstate.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/airsim/currentstate.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							The current state of Airport Simulator demo.
+						</div>
+
+						<a href="projectimages/airsim/terminate.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/airsim/terminate.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Terminatation of the Airport Simulator demo.
+						</div>
+
+					</div> <!-- gallery end -->
+
+				</div>
 				<div align="center">
 
 					<ul class="Back-to">
@@ -458,29 +500,68 @@ if (hs.addSlideshow) hs.addSlideshow({
 					</div>
 				</div>
 
-	<!-- 			<p><b>Project: </b>Food Calorie Database (Client and Server)<br>
+				<div id="rec3">
+
+				<p><b>Project: </b>Food Calorie Database (Client and Server)<br>
 				<b>Year: </b>2014<br>
 				<b>Role: </b>Developer<br>
 				<b>Languages Utilised: </b>C<br>
 				<b>Project Description: </b>Build and design server and client applications that inteface with one another, in order to pass food calorie information. With the Server developed to behave as a database with food calorie information, with the Client developed as a means to access said information from the server.<br>
 				<b>Code Description: </b><br></p>
 
-				<p>Two different applications have been developed, one a server which houses the food calorie database, and the other to act as a client for the server. The client application is designed to allow the user to query the server for food calorie information via sending a search term, and/or add a new item to the database used by the server. The server applicated is designed to accept and process a maximum of 10 incoming clients requests and handle them separately. If a search has been requested the server will look for items matching the search term and return an n number of found results to the client. If a new item is to be added the server will correctly place the new item in the correct alphabetic location and then save the database.</p>
-				
-					<li>Development of functionality using C to build upon developed functionality to account for multiple clients connected to the server via the use of a thread pool.</li>
-					<li>Development of functionality using C to allow for the client to add to the database.</li>
-					<li>Implementation of protective measures, such as semaphores and mutexes in order to protect and remove the risk of currupting data.</li>
+				<p>Two different applications have been developed, one a server which houses the food calorie database, and the other to act as a client for the server. The client application is designed to allow the user to query the server for food calorie information via sending a search term, and/or add a new item to the database used by the server. The server applicated is designed to accept and process a maximum of 10 incoming clients requests and handle them separately. If a search has been requested the server will look for items matching the search term and return an n number of found results to the client. If a new item is to be added the server will correctly place the new item in the correct alphabetic location and then save the database.<br><br>
+
+				As part of this project I worked on developed the functionality to account for multiple clients connected to the server via the use of a thread pool, in addition to the functionality to allow for the client to add to the database. I also worked on the implementation of protective measures, such as semaphores and mutexes in order to protect and remove the risk of currupting data.
 				
 				<p><b>Repository Link: </b><br>
 				
 				<a href="https://bitbucket.org/Rhaistlin/client-and-server-food-calorie-database" title="Food and Calorie database Bitbucket" target="_blank">Food and Calorie database Repository Click Here</a><br>
 				</p>
-				<p><b>Note: Currently not working as intended, fix incoming</b></p>
 				
+				<b>Project Gallery: </b></p>			
+
+					<div class="highslide-gallery">
+
+						<a href="projectimages/foodcaldata/cliserconnect.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/foodcaldata/cliserconnect.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" />
+						</a>
+
+						<div class="highslide-caption">
+							Food Calorie Client/Server connections demo.
+						</div>
+
+						<a href="projectimages/foodcaldata/searchresults.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/foodcaldata/searchresults.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Food Calorie search request demo.
+						</div>
+
+						<a href="projectimages/foodcaldata/newadd.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/foodcaldata/newadd.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Food Calorie new addition demo.
+						</div>
+
+						<a href="projectimages/foodcaldata/terminated.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/foodcaldata/terminated.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Terminatation of Food Calorie clients and server.
+						</div>
+
+					</div> <!-- gallery end -->
+
+				</div>
 				<div align="center">
 
 					<ul class="Back-to">
-	  					<li "text-align:right;"><a class ="Back" href="projects.html#Uni-Team">Back to Section Start</a></li>
+	  					<li "text-align:right;"><a class ="Back" href="projects.html#c-pro">Back to Section Start</a></li>
 	  					<li "text-align:left;"><a class ="Back" href="projects.html#header">Back to Top</a></li>
 					</ul>
 				
@@ -489,42 +570,8 @@ if (hs.addSlideshow) hs.addSlideshow({
 				<div align="center">
 					<div style="border-top-color: white; border-top-style: groove; border-top-width: 6px; margin-top: 1em; padding-top: 1em; width: 750px;">
 					</div>
-				</div> -->
+				</div>
 
-	<!-- 			<p><b>Project: </b>PaperMiner<br>
-				<b>Year: </b>2013<br>
-				<b>Role: </b>JAVA Developer<br>
-				<b>Languages Utilised: Java, Javascript, JQuery</b><br>
-				<b>Project Description: </b>Build and design additional functionality for a search engine for an online database of historical records.<br>
-				<b>Code Description: </b><br></p>
-
-				<p></p>
-
-				<ul class="content-points" >
-					<li>Participation in group discussions including strategic planning, progress updates, and troubleshooting.</li>
-					<li>Research and technical analysis of current state system behaviour relating to my directed tasks.</li>
-					<li>JAVA development of additional user functionality.</li>
-					<li>Planning and execution of test suites for user acceptance.</li>
-					<li>Document creation for system enhancements including functionality and parameters, as well as test cases including results and future iterations.</li>
-				</ul>
-
-				<b>Repository Link: </b><br>
-				<a href="https://bitbucket.org/emelville/inb372-project-repo" title="Paperminer database Bitbucket" target="_blank">Paperminer Repository Click Here</a><br>
-				</p>
-
-				<div align="center">
-
-					<ul class="Back-to">
-	  					<li style="text-align:right;"><a class ="Back" href="projects.html#Uni-Team">Back to Section Start</a></li>
-	  					<li style="text-align:left;"><a class ="Back" href="projects.html#header">Back to Top</a></li>
-					</ul>
-				
-				</div>			
-
-				<div align="center">
-					<div style="border-top-color: white; border-top-style: groove; border-top-width: 6px; margin-top: 1em; padding-top: 1em; width: 750px;">
-					</div>
-				</div> -->
 
 				<p><b>Project: </b>Hadamard Decoding/Encoding Application<br>
 				<b>Year: </b>2013<br>
