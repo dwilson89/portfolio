@@ -103,8 +103,19 @@ if (hs.addSlideshow) hs.addSlideshow({
 		<div class="content-wrapper">
 			
 			
+
 			<h2>Projects</h2><hr>
 			
+			<p><b>Recent Projects </b><br>
+				<ul class="project-list">
+	  				<li><a class ="project-bar" href="projects.html#rec1">Virtual World Elicitation Application Desktop Version</a></li>
+	  				<li><a class ="project-bar" href="projects.html#rec2">Virtual World Elicitation Application Immersive VR Version</a></li>
+	  				<li><a class ="project-bar" href="projects.html#rec3">Silo Inspection UAV</a></li>
+	  				<li><a class ="project-bar" href="projects.html#rec4">Food Calorie Database (Client and Server)</a></li>
+				</ul>
+
+			<p><b>Past Projects </b>
+
 			<ul class="project-list">
   				<li><a class ="project-bar" href="projects.html#cpp-pro">C++ Projects</a></li>
   				<li><a class ="project-bar" href="projects.html#java-pro">Java Projects</a></li>
@@ -113,11 +124,242 @@ if (hs.addSlideshow) hs.addSlideshow({
   				<li><a class ="project-bar" href="projects.html#Other-Pro">Other Projects</a></li>
 			</ul>
 
-			<div id="cpp-pro">
-				
-				<h2>C++ Projects</h2><hr>
-			
+			<div id="rec-projects">
+
+				<h2>Recent Projects</h2><hr>
+
 				<div id="rec1">
+					
+					<p><b>Project: </b>Virtual World Elicitation Application Desktop Version<br>
+					<b>Year: </b>2015<br>
+					<b>Project Type: </b>Individual<br>
+					<b>Role: </b>Developer<br>
+					<b>Languages/Applications Utilised: </b>Unity 5, C# Unity Scripting<br>
+					<b>Project Description: </b>The primary focus of this project is how best to use interactive software/hardware in order to enhance/improve the virtual world experience for the user/s in order to help elicit declarative knowledge from an expert.<br>
+					<b>Code Desciption: </b><br></p>
+					
+					<p>The virtual world application was built using the Unity 5 development tool, the Unity provided assets, and obtained reef mesh data. The functionality of each application was primarily developed using the Unity C# scripting and libraries. 
+
+					The application has been developed to allow for exploration of the virtual world, and the ability to act upon the virtual world via having the ability to select areas onto which information can be elicited. The majority of this functionality is achieved via the use of ray casting, which is used in order to detect possible collisions in a specified direction. For the purpose of these applications, it was designed that the rays were cast from the center of the user eye-line, with the purpose of indicating if they are "looking" at an intractable object. As such every item in the virtual environment has been outfitted with colliders and specific tags, in order to identify the type of object, the cast collides with. <br><br>
+
+					The desktop application primarily was developed using the standard packages and libraries that are either inbuilt into the Unity 5 engine, or offered for free on the Unity Asset store. It was developed to use standard input from an attached keyboard and mouse setup, with a simple array of commands mapped to key application functionality. Basic movement was mapped to the standard directional keys and wasd setup, camera movement controlled via the mouse, and Interaction controls was limited to left-button mouse clicks for confirmation and interaction, Left-shift for rescaling in a elicitation state, and Left-ctrl for repositioning in a elicitation state. These controls chosen as they are simple to use, and should be familiar to most type of users, as they are fairly coming in HCI. <br><br>
+
+					There are roughly 4 different main states of operation, Exploration state, Elicitation state, Inspection State, and a Exit State, with each having several sub-state. A diagram can be found in the gallery below. <br>
+
+					<ul class="content-points" >
+
+						<li>The exploration state is the default state the application starts in, and will return to when the other states in the applications have ended. This state is designed to be responsible for handling the movement and object interaction controls and functionality developed for the application.</li>
+
+						<li>The elicitation state occurs when the user has selected to interact with a Reef object in the virtual world. In this state the user can refine their selected area via entering one of the sub-states, reposition or rescaling. </li>
+
+						<li>The inspection state occurs when the user has selected to interact with a Inspect Element object in the virtual world. In this state a HUD appears with details of the selected elements. In this state the user can enter the Edit sub-state in order to add to or edit previous stored expert information. </li>
+						
+
+						<li>Finally, the Exit Menu occurs when the playerhas hit escape in the exploration state, and is designed to handle the Saving and Loading of elicited information in addition to the Exiting the application. <br><br>
+					</ul>
+
+					</p>
+
+					<p><b>Repository Links: </b><br>
+
+
+					<p><b>Additional Links: </b><br>
+
+					
+					<b>Project Gallery: </b></p>			
+
+					<div class="highslide-gallery">
+
+						<a href="projectimages/VWDK/SimpleSD.jpg" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWDK/SimpleSD.thumb.jpg" alt="Highslide JS"
+								title="Click to enlarge" />
+						</a>
+
+						<div class="highslide-caption">
+							Simple State Diagram of the Virtual World Elicitation Application.
+						</div>
+
+						<a href="projectimages/VWDK/UMLFirsthalf.jpg" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWDK/UMLFirsthalf.thumb.jpg" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							First Half of the UML Class Diagram (Data Controller).
+						</div>
+
+						<a href="projectimages/VWDK/UMLSecondhalf.jpg" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWDK/UMLSecondhalf.thumb.jpg" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Second Half of the UML Class Diagram (Player Actor).
+						</div>
+
+						<a href="projectimages/VWDK/Splash.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWDK/Splash.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Splash Screen for the Desktop Application.
+						</div>
+
+						<a href="projectimages/VWDK/Hovering.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWDK/Hovering.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Screenshot of Interactable inspection element.
+						</div>
+
+						<a href="projectimages/VWDK/Inspection.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWDK/Inspection.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Sceenshot of Element Inspection.
+						</div>
+
+						<a href="projectimages/VWDK/Elicitation.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWDK/Elicitation.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Sceenshot of Elicitation in progress.
+						</div>
+
+					</div> <!-- gallery end -->
+
+
+					<div align="center">
+
+						<ul class="Back-to">
+		  					<li style="text-align:right;"><a class ="Back" href="projects.html#rec-projects">Back to Section Start</a></li>
+		  					<li style="text-align:left;"><a class ="Back" href="projects.html#header">Back to Top</a></li>
+						</ul>
+					
+					</div> <!-- centre -->
+
+					<div align="center">
+						<div style="border-top-color: white; border-top-style: groove; border-top-width: 6px; margin-top: 1em; padding-top: 1em; width: 750px;">
+						</div>
+					</div>
+
+				</div>
+				
+				<div id="rec2">
+				
+					<p><b>Project: </b>Virtual World Elicitation Application Immersive VR Version<br>
+					<b>Year: </b>2015<br>
+					<b>Project Type: </b>Individual<br>
+					<b>Role: </b>Developer<br>
+					<b>Languages/Applications Utilised: </b>Unity 5, C# Unity Scripting<br>
+					<b>Additional Technologies: </b> Oculus VR HMD, LeapMotion Controller
+					<b>Project Description: </b>The primary focus of this project is how best to use interactive software/hardware in order to enhance/improve the virtual world experience for the user/s in order to help elicit declarative knowledge from an expert.<br>
+					<b>Code Desciption: </b><br></p>
+
+					<p>The virtual world application was built using the Unity 5 development tool, the Unity provided assets, and obtained reef mesh data. The functionality of each application was primarily developed using the Unity C# scripting and libraries. 
+
+					The application has been developed to allow for exploration of the virtual world, and the ability to act upon the virtual world via having the ability to select areas onto which information can be elicited. The majority of this functionality is achieved via the use of ray casting, which is used in order to detect possible collisions in a specified direction. For the purpose of these applications, it was designed that the rays were cast from the center of the user eye-line, with the purpose of indicating if they are "looking" at an intractable object. As such every item in the virtual environment has been outfitted with colliders and specific tags, in order to identify the type of object, the cast collides with. <br><br>
+
+					The immersive application was designed to use the desktop version as a basis on which to build off of. However the UI and control system had to be re-purpose to work in an immersive VR setup. As such it was developed to use an Oculus[19] and Leap Motion Controller libraries and packages specifically developed to integrate with Unity 5. Using the LeapMotion API, the application was developed to work with four recognised gestures, as seen in the gesture figure found in the gallery below. The gesture A is used for movement in virtual world, B is used for indicating an interaction or for repositioning in the elicitation state, C is used for the rescaling of the elicitation area, and D is used for confirmation for elicitation areas.<br><br>
+
+					As it is using VR technology, the UI system had to be converted to world space in order to allow for the user to interact with it correctly. This was then built upon by implementing the Hover VR Interface built for the LeapMotion controller, in order to give the user access to in world options, at literately the tips of their fingers. 
+ 					<br><br>
+
+					There are roughly 4 different main states of operation, Exploration state, Elicitation state, Inspection State, and a Exit State, with each having several sub-state. A diagram can be found in the gallery below. <br>
+
+					<ul class="content-points" >
+
+						<li>The exploration state is the default state the application starts in, and will return to when the other states in the applications have ended. This state is designed to be responsible for handling the movement and object interaction controls and functionality developed for the application.</li>
+
+						<li>The elicitation state occurs when the user has selected to interact with a Reef object in the virtual world. In this state the user can refine their selected area via entering one of the sub-states, reposition or rescaling. </li>
+
+						<li>The inspection state occurs when the user has selected to interact with a Inspect Element object in the virtual world. In this state a HUD appears with details of the selected elements. In this state the user can enter the Edit sub-state in order to add to or edit previous stored expert information. </li>
+						
+
+						<li>Finally, the Exit Menu occurs when the playerhas hit escape in the exploration state, and is designed to handle the Saving and Loading of elicited information in addition to the Exiting the application. <br><br>
+					</ul>
+
+
+					<p><b>Repository Links: </b><br>
+
+
+					<p><b>Additional Links: </b><br>
+
+					
+					<b>Project Gallery: </b></p>			
+
+					<div class="highslide-gallery">
+
+						<a href="projectimages/VWIVR/SimpleSD.jpg" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWIVR/SimpleSD.thumb.jpg" alt="Highslide JS"
+								title="Click to enlarge" />
+						</a>
+
+						<div class="highslide-caption">
+							Simple State Diagram of the Virtual World Elicitation Application.
+						</div>
+
+						<a href="projectimages/VWIVR/UMLImmersive.jpg" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWIVR/UMLImmersive.thumb.jpg" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							The UML Class Diagram for the Immersive VR application.
+						</div>
+
+						<a href="projectimages/VWIVR/Gestures.jpg" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWIVR/Gestures.thumb.jpg" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Gestures for the Immersive VR application.
+						</div>
+					
+						<a href="projectimages/VWIVR/HovercastMenu.jpg" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWIVR/HovercastMenu.thumb.jpg" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Hovercast Menu for the Immersive VR Application.
+						</div>
+
+						<a href="projectimages/VWIVR/Inspection.jpg" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWIVR/Inspection.thumb.jpg" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Sceenshot of Element Inspection.
+						</div>
+
+						<a href="projectimages/VWIVR/Elicitation.jpg" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/VWIVR/Elicitation.thumb.jpg" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Sceenshot of Elicitation in progress.
+						</div>
+
+					</div> <!-- gallery end -->
+
+					<div align="center">
+
+					<ul class="Back-to">
+	  					<li style="text-align:right;"><a class ="Back" href="projects.html#rec-projects">Back to Section Start</a></li>
+	  					<li style="text-align:left;"><a class ="Back" href="projects.html#header">Back to Top</a></li>
+					</ul>
+				
+					</div> <!-- centre -->
+
+					<div align="center">
+						<div style="border-top-color: white; border-top-style: groove; border-top-width: 6px; margin-top: 1em; padding-top: 1em; width: 750px;">
+						</div>
+					</div>
+
+				</div>
+
+				<div id="rec3">
+					
 					<p><b>Project: </b>Silo Inspection UAV<br>
 					<b>Year: </b>2014<br>
 					<b>Project Type: </b>Team<br>
@@ -212,12 +454,12 @@ if (hs.addSlideshow) hs.addSlideshow({
 
 					</div> <!-- gallery end -->
 
-				</div>	<!-- rec1 end -->
+				</div>	<!-- rec3 end -->
 
 				<div align="center">
 
 					<ul class="Back-to">
-	  					<li style="text-align:right;"><a class ="Back" href="projects.html#cpp-pro">Back to Section Start</a></li>
+	  					<li style="text-align:right;"><a class ="Back" href="projects.html#rec-projects">Back to Section Start</a></li>
 	  					<li style="text-align:left;"><a class ="Back" href="projects.html#header">Back to Top</a></li>
 					</ul>
 				
@@ -228,6 +470,85 @@ if (hs.addSlideshow) hs.addSlideshow({
 					</div>
 				</div>
 
+				<div id="rec4">
+
+				<p><b>Project: </b>Food Calorie Database (Client and Server)<br>
+				<b>Year: </b>2014<br>
+				<b>Role: </b>Developer<br>
+				<b>Languages Utilised: </b>C<br>
+				<b>Project Description: </b>Build and design server and client applications that inteface with one another, in order to pass food calorie information. With the Server developed to behave as a database with food calorie information, with the Client developed as a means to access said information from the server.<br>
+				<b>Code Description: </b><br></p>
+
+				<p>Two different applications have been developed, one a server which houses the food calorie database, and the other to act as a client for the server. The client application is designed to allow the user to query the server for food calorie information via sending a search term, and/or add a new item to the database used by the server. The server applicated is designed to accept and process a maximum of 10 incoming clients requests and handle them separately. If a search has been requested the server will look for items matching the search term and return an n number of found results to the client. If a new item is to be added the server will correctly place the new item in the correct alphabetic location and then save the database.<br><br>
+
+				As part of this project I worked on developed the functionality to account for multiple clients connected to the server via the use of a thread pool, in addition to the functionality to allow for the client to add to the database. I also worked on the implementation of protective measures, such as semaphores and mutexes in order to protect and remove the risk of currupting data.
+				
+				<p><b>Repository Link: </b><br>
+				
+				<a href="https://bitbucket.org/Rhaistlin/client-and-server-food-calorie-database" title="Food and Calorie database Bitbucket" target="_blank">Food and Calorie database Repository Click Here</a><br>
+				</p>
+				
+				<p><b>Project Gallery: </b></p>			
+
+					<div class="highslide-gallery">
+
+						<a href="projectimages/foodcaldata/cliserconnect.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/foodcaldata/cliserconnect.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" />
+						</a>
+
+						<div class="highslide-caption">
+							Food Calorie Client/Server connections demo.
+						</div>
+
+						<a href="projectimages/foodcaldata/searchresults.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/foodcaldata/searchresults.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Food Calorie search request demo.
+						</div>
+
+						<a href="projectimages/foodcaldata/newadd.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/foodcaldata/newadd.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Food Calorie new addition demo.
+						</div>
+
+						<a href="projectimages/foodcaldata/terminated.png" class="highslide" onclick="return hs.expand(this)">
+							<img src="projectimages/foodcaldata/terminated.thumb.png" alt="Highslide JS"
+								title="Click to enlarge" /></a>
+
+						<div class="highslide-caption">
+							Terminatation of Food Calorie clients and server.
+						</div>
+
+					</div> <!-- gallery end -->
+
+				</div>
+				<div align="center">
+
+					<ul class="Back-to">
+	  					<li "text-align:right;"><a class ="Back" href="projects.html#rec-projects">Back to Section Start</a></li>
+	  					<li "text-align:left;"><a class ="Back" href="projects.html#header">Back to Top</a></li>
+					</ul>
+				
+				</div>
+
+				<div align="center">
+					<div style="border-top-color: white; border-top-style: groove; border-top-width: 6px; margin-top: 1em; padding-top: 1em; width: 750px;">
+					</div>
+				</div>
+
+
+			</div>
+
+			<div id="cpp-pro">
+				
+				<h2>C++ Projects</h2><hr>
+			
 				<p><b>Project: </b>Travelling Salesman Problem Application<br>
 				<b>Year: </b>2013<br>
 				<b>Project Type: </b>Individual Project<br>
@@ -429,8 +750,7 @@ if (hs.addSlideshow) hs.addSlideshow({
 			<div id="c-pro">
 				<h2>C Projects</h2><hr>
 				
-				<div id="rec2">
-
+				
 				<p><b>Project: </b>Airport Simulator<br>
 				<b>Year: </b>2014<br>
 				<b>Project Type: </b>Team<br>
@@ -485,7 +805,6 @@ if (hs.addSlideshow) hs.addSlideshow({
 
 					</div> <!-- gallery end -->
 
-				</div>
 				<div align="center">
 
 					<ul class="Back-to">
@@ -500,77 +819,7 @@ if (hs.addSlideshow) hs.addSlideshow({
 					</div>
 				</div>
 
-				<div id="rec3">
-
-				<p><b>Project: </b>Food Calorie Database (Client and Server)<br>
-				<b>Year: </b>2014<br>
-				<b>Role: </b>Developer<br>
-				<b>Languages Utilised: </b>C<br>
-				<b>Project Description: </b>Build and design server and client applications that inteface with one another, in order to pass food calorie information. With the Server developed to behave as a database with food calorie information, with the Client developed as a means to access said information from the server.<br>
-				<b>Code Description: </b><br></p>
-
-				<p>Two different applications have been developed, one a server which houses the food calorie database, and the other to act as a client for the server. The client application is designed to allow the user to query the server for food calorie information via sending a search term, and/or add a new item to the database used by the server. The server applicated is designed to accept and process a maximum of 10 incoming clients requests and handle them separately. If a search has been requested the server will look for items matching the search term and return an n number of found results to the client. If a new item is to be added the server will correctly place the new item in the correct alphabetic location and then save the database.<br><br>
-
-				As part of this project I worked on developed the functionality to account for multiple clients connected to the server via the use of a thread pool, in addition to the functionality to allow for the client to add to the database. I also worked on the implementation of protective measures, such as semaphores and mutexes in order to protect and remove the risk of currupting data.
 				
-				<p><b>Repository Link: </b><br>
-				
-				<a href="https://bitbucket.org/Rhaistlin/client-and-server-food-calorie-database" title="Food and Calorie database Bitbucket" target="_blank">Food and Calorie database Repository Click Here</a><br>
-				</p>
-				
-				<p><b>Project Gallery: </b></p>			
-
-					<div class="highslide-gallery">
-
-						<a href="projectimages/foodcaldata/cliserconnect.png" class="highslide" onclick="return hs.expand(this)">
-							<img src="projectimages/foodcaldata/cliserconnect.thumb.png" alt="Highslide JS"
-								title="Click to enlarge" />
-						</a>
-
-						<div class="highslide-caption">
-							Food Calorie Client/Server connections demo.
-						</div>
-
-						<a href="projectimages/foodcaldata/searchresults.png" class="highslide" onclick="return hs.expand(this)">
-							<img src="projectimages/foodcaldata/searchresults.thumb.png" alt="Highslide JS"
-								title="Click to enlarge" /></a>
-
-						<div class="highslide-caption">
-							Food Calorie search request demo.
-						</div>
-
-						<a href="projectimages/foodcaldata/newadd.png" class="highslide" onclick="return hs.expand(this)">
-							<img src="projectimages/foodcaldata/newadd.thumb.png" alt="Highslide JS"
-								title="Click to enlarge" /></a>
-
-						<div class="highslide-caption">
-							Food Calorie new addition demo.
-						</div>
-
-						<a href="projectimages/foodcaldata/terminated.png" class="highslide" onclick="return hs.expand(this)">
-							<img src="projectimages/foodcaldata/terminated.thumb.png" alt="Highslide JS"
-								title="Click to enlarge" /></a>
-
-						<div class="highslide-caption">
-							Terminatation of Food Calorie clients and server.
-						</div>
-
-					</div> <!-- gallery end -->
-
-				</div>
-				<div align="center">
-
-					<ul class="Back-to">
-	  					<li "text-align:right;"><a class ="Back" href="projects.html#c-pro">Back to Section Start</a></li>
-	  					<li "text-align:left;"><a class ="Back" href="projects.html#header">Back to Top</a></li>
-					</ul>
-				
-				</div>
-
-				<div align="center">
-					<div style="border-top-color: white; border-top-style: groove; border-top-width: 6px; margin-top: 1em; padding-top: 1em; width: 750px;">
-					</div>
-				</div>
 
 
 				<p><b>Project: </b>Hadamard Decoding/Encoding Application<br>
